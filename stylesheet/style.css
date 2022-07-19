@@ -1,0 +1,89 @@
+/* --------fonts----------- */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@500;600;700&display=swap');
+
+/*--------- Defult utilitis style --------*/
+*{
+    font-family: 'Poppins', sans-serif, 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+/*------- root style --------- */
+:root{
+    --main-font-family: 'Poppins', sans-serif;
+    --seconde-font-family: 'Manrope', sans-serif;
+    --primary-btn-bg-color: dodgerblue;
+    --heading-font-size: 52px;
+    --seconde-heading-font-size: 28px;
+    --third-heading-font-size: 24px;
+    --primary-peragraph-font-size: 16px;
+    --secondery-peragraph-font-size: 14px;
+    --peragraph-font-color: #787885;
+}
+/*---------- header style start ----------*/
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.header-logo{
+    font-family: var(--main-font-family);
+    font-size: var(--third-heading-font-size);
+    font-weight: 700;
+}
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+.header-navigation ul{
+    display: flex;
+}
+.header-navigation ul li{
+    list-style: none;
+    margin-right: 35px;
+}
+.header-navigation ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: var(--primary-peragraph-font-size);
+    position: relative;
+    display: inline-block;
+}
+.header-navigation ul li a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    top: 30px;
+    transition: width 0.4s;
+}
+.header-navigation ul li a:hover::after{
+    width: 100%;
+}
+.fa-solid{
+    color: black;
+}
+.fa-magnifying-glass{
+    margin-right: 25px;
+}
+/*------------- banner style start ----------------*/
+.flexible-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.half-width{
+   width: 50%;
+}
+.banner-details .banner-heading{
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: var(--heading-font-size);
+}
